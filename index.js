@@ -12,7 +12,7 @@ const model = new LlamaModel({
     modelPath: path.join(__dirname, "models", "llama-2-7b.Q4_K_M.gguf")
     // modelPath: path.join(__dirname, "models", "llama-2-13b-ensemble-v6.Q3_K_L.gguf")
 });
-const context = new LlamaContext({ model, threads: 2 });
+const context = new LlamaContext({ model, threads: 4 });
 const session = new LlamaChatSession({ context });
 
 app.use(express.json());
