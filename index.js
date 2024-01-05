@@ -9,7 +9,8 @@ const port = 3000;
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const model = new LlamaModel({
-    modelPath: path.join(__dirname, "models", "vicuna-7b-16k-q4_k_s")
+    modelPath: path.join(__dirname, "models", "vicuna-13b-16k-q4_k_s"),
+    gpuLayers: 8,
 });
 const context = new LlamaContext({ model, threads: 8 });
 const session = new LlamaChatSession({ context });
