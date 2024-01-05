@@ -2,9 +2,9 @@
 
 1. **Baixe o Modelo:**
    - Baixe o modelo desejado na pasta "models" na raiz deste projeto.
-   - Exemplo de link para download: [Modelo Llama-2-7B](https://huggingface.co/TheBloke/Llama-2-7B-GGUF/resolve/main/llama-2-7b.Q8_0.gguf?download=true).
+   - Exemplo de link para download: [Modelo vicuna:7b-v1.5](https://ollama.ai/library/vicuna:7b-v1.5-16k-q4_K_S).
 
-   - Exemplo de link para download: [Modelo Llama-2-13B](https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF/resolve/main/llama-2-13b-chat.Q8_0.gguf?download=true).
+   - Exemplo de link para download: [Modelo vicuna:13b-v1.5](https://ollama.ai/library/vicuna:13b-v1.5-16k-q5_K_S).
 
 2. **Instale as Dependências:**
    - Execute o comando abaixo para instalar as dependências necessárias:
