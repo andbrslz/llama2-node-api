@@ -9,10 +9,9 @@ const port = 3000;
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const model = new LlamaModel({
-    // modelPath: path.join(__dirname, "models", "llama-2-7b.Q4_K_M.gguf")
-    modelPath: path.join(__dirname, "models", "llama-2-13b-ensemble-v6.Q3_K_L.gguf")
+    modelPath: path.join(__dirname, "models", "vicuna-7b-16k-q4_k_s")
 });
-const context = new LlamaContext({ model, threads: 4 });
+const context = new LlamaContext({ model, threads: 8 });
 const session = new LlamaChatSession({ context });
 
 app.use(express.json());
